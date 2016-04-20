@@ -53,12 +53,8 @@ var defaults = (function () {
 gulp.task('default', function (done) {
     var prompts = [{
         name: 'appName',
-        message: 'What is the repo name of your Project?',
-        default: _.slugify(defaults.appName)
-    }, {
-        name: 'appTitle',
-        message: 'What is the title(on the Header Bar)?',
-		default: defaults.appName
+        message: 'What is the name of your Project?',
+        default: defaults.appName
     }, {
         type: 'confirm',
         name: 'moveon',
@@ -71,6 +67,7 @@ gulp.task('default', function (done) {
                 return done();
             }
             answers.appNameSlug = _.slugify(answers.appName);
+            answers.appNameCamel = answers.appName.toCamelCase();
             gulp.src(__dirname + '/templates/**')
                 .pipe(template(answers))
                 .pipe(rename(function (file) {
@@ -86,3 +83,10 @@ gulp.task('default', function (done) {
                 });
         });
 });
+
+String.prototype.toCamelCase = function() {
+    return this.replace(/^([A-Z])|\s(\w)/g, function(match, p1, p2, offset) {
+        if (p2) return p2.toUpperCase();
+        return p1.toLowerCase();
+    });
+};

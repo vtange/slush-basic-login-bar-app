@@ -1,6 +1,6 @@
 {
   "name": "slush-basic-login-bar-app",
-  "description": "Make a Express app that uses basic-login-bar",
+  "description": "Make an Express app that uses basic-login-bar",
   "version": "1.0.0",
   "homepage": "https://github.com/vtange/slush-basic-login-bar-app",
   "author": {
