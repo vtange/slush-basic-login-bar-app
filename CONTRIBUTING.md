@@ -1,4 +1,4 @@
-# Contributing to basic-login-bar-app
+# Contributing to slush-ejs-social
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -93,11 +93,11 @@ project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/slush-basic-login-bar-app
+   git clone https://github.com/<your-username>/slush-ejs-social
    # Navigate to the newly cloned directory
-   cd slush-basic-login-bar-app
+   cd slush-ejs-social
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/vtange/slush-basic-login-bar-app
+   git remote add upstream https://github.com/vtange/slush-ejs-social
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:

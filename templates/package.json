@@ -1,13 +1,14 @@
 {
-  "name": "<%= appNameSlug %>",
-  "title": "<%= appName %>",
+  "name": "<@= appNameSlug @>",
+  "title": "<@= appName @>",
   "version": "1.0.1",
   "description": "New App Goodness",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "basic-login-bar": "^1.1.5",
+    "ejs-header": "^1.1.5",
+    "ejs-header-social": "^1.1.5",
     "bcrypt-nodejs": "latest",
     "body-parser": "~1.0.0",
     "connect-flash": "^0.1.1",

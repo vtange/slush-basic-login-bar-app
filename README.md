@@ -1,16 +1,16 @@
-# slush basic-login-bar-app 
+# slush-ejs-social 
 
-[![Build Status](https://secure.travis-ci.org/vtange/slush-basic-login-bar-app.png?branch=master)](https://travis-ci.org/vtange/slush-basic-login-bar-app) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-basic-login-bar-app.png)](http://badges.enytc.com/for/npm/slush-basic-login-bar-app)
+[![Build Status](https://secure.travis-ci.org/vtange/slush-ejs-social.png?branch=master)](https://travis-ci.org/vtange/slush-ejs-social) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-ejs-social.png)](http://badges.enytc.com/for/npm/slush-ejs-social)
 
-> Make an Express app that uses basic-login-bar
+> Make an Express app that uses ejs-header-social
 
 
 ## Getting Started
 
-Install `slush-basic-login-bar-app` globally:
+Install `slush-ejs-social` globally:
 
 ```bash
-$ npm install -g slush-basic-login-bar-app
+$ npm install -g slush-ejs-social
 ```
 
 Or git clone this repo and install it via npm link
@@ -23,13 +23,13 @@ $ npm link
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-basic-login-bar-app
+$ mkdir New-Folder
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ slush basic-login-bar-app
+$ cd New-Folder && slush ejs-social
 ```
 
 ## Getting To Know Slush
@@ -42,10 +42,10 @@ To find out more about Slush, check out the [documentation](https://github.com/s
 
 ## Contributing
 
-See the [CONTRIBUTING Guidelines](https://github.com/vtange/slush-basic-login-bar-app/blob/master/CONTRIBUTING.md)
+See the [CONTRIBUTING Guidelines](https://github.com/vtange/slush-ejs-social/blob/master/CONTRIBUTING.md)
 
 ## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/vtange/slush-basic-login-bar-app/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/vtange/slush-ejs-social/issues).
 
 ## License 
 

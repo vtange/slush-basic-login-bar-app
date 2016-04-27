@@ -1,6 +1,6 @@
 /*
- * slush-basic-login-bar-app
- * https://github.com/vtange/slush-basic-login-bar-app
+ * slush-ejs-social
+ * https://github.com/vtange/slush-ejs-social
  *
  * Copyright (c) 2016, Victor Tang
  * Licensed under the MIT license.
@@ -16,6 +16,12 @@ var gulp = require('gulp'),
     _ = require('underscore.string'),
     inquirer = require('inquirer'),
     path = require('path');
+
+var settings = {
+					evaluate    : /<[@]([\s\S]+?)[@]>/g,
+					interpolate : /<[@]=([\s\S]+?)[@]>/g,
+					escape      : /<[@]-([\s\S]+?)[@]>/g
+				};
 
 function format(string) {
     var username = string.toLowerCase();
@@ -69,7 +75,7 @@ gulp.task('default', function (done) {
             answers.appNameSlug = _.slugify(answers.appName);
             answers.appNameCamel = answers.appName.toCamelCase();
             gulp.src(__dirname + '/templates/**')
-                .pipe(template(answers))
+                .pipe(template(answers,settings))
                 .pipe(rename(function (file) {
                     if (file.basename[0] === '_') {
                         file.basename = '.' + file.basename.slice(1);
