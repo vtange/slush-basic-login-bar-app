@@ -1,7 +1,7 @@
 {
   "name": "slush-ejs-social",
   "description": "Make an Express app that uses ejs-header-social",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/vtange/slush-ejs-social",
   "author": {
     "name": "Victor Tang",
