@@ -74,7 +74,7 @@ gulp.task('default', function (done) {
             }
             answers.appNameSlug = _.slugify(answers.appName);
             answers.appNameCamel = answers.appName.toCamelCase();
-            gulp.src(__dirname + '/templates/**')
+            gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*'])
                 .pipe(template(answers,settings))
                 .pipe(rename(function (file) {
                     if (file.basename[0] === '_') {
