@@ -13,6 +13,7 @@ mongoose.connect(configDB.url); // connect to our database
 // get project information
 var package = require('./package.json');
 app.title = package.title;
+app.social = true;
 
 var flash    = require('connect-flash');
 var session  = require('express-session');
